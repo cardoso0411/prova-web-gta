@@ -3,55 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> GTA 5 - Mais Detalhes</title>
+    <title>GTA 5 - Mais Detalhes</title>
     <style>
+        :root {
+            --bg: #eef0ff;
+            --card: #ffffff;
+            --primary: #665cbe;
+            --accent: #0070d1;
+            --text: #1c1c2e;
+            --muted: #5d617d;
+        }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        * {
+            box-sizing: border-box;
         }
-    
-        #logo {
-            width: 300px;
-            display: block;
-            margin: 0 auto;
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #f7f7ff 0%, #eef0ff 40%, #ffffff 100%);
+            color: var(--text);
+            line-height: 1.6;
         }
-    
-        h1 {
+
+        header {
             text-align: center;
-            color: #665cbe;
-            border: 5px solid #0070d1;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #e3e3e3;
+            padding: 28px 16px 0;
         }
-    
-        p {
-            text-align: justify;
-            line-height: 1.5;
+
+        header h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: clamp(2rem, 2.4vw, 2.8rem);
         }
-    
-        img {
-            width: 40%;
-            height: auto;
-            display: block;
-            margin: auto;
+
+        header p {
+            max-width: 760px;
+            margin: 14px auto 24px;
+            color: var(--muted);
         }
-    
-        a {
-            color: #665cbe;
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding: 0 16px 24px;
+        }
+
+        nav a {
             text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            padding: 10px 18px;
+            border: 1px solid rgba(102, 92, 190, 0.3);
+            border-radius: 999px;
+            background: #ffffff;
+            transition: 0.2s ease;
         }
-    
-        a:hover {
-            text-decoration: underline;
+
+        nav a:hover,
+        nav a:focus-visible {
+            background: var(--accent);
+            color: #ffffff;
+            outline: none;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 16px 32px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 22px;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 680px;
+            display: block;
+            margin: 0 auto 18px;
+            border-radius: 18px;
+            transition: transform 0.25s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        .info-list {
+            margin: 0;
+            padding-left: 22px;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+            padding: 14px 16px 26px;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 20px;
+            }
+
+            nav {
+                gap: 8px;
+            }
         }
     </style>
 </head>
 <body>
-     <div class=“container”> <img id="logo" src="Img/logo-gta-6.jpg" alt=“Logo GTA”> <h1>GTA 5 - Mais Detalhes</h1> <p>Nesta página, você vai encontrar mais informações sobre GTA 5 e GTA 6, dois dos jogos mais populares e esperados da franquia Grand Theft Auto. Você vai saber mais sobre a história, os personagens, as novidades e as curiosidades desses títulos, que prometem muita diversão e emoção para os fãs de GTA.</p> <a href="Index.html">Ir para GTA 5</a> | <a href="conteudo-gta6.html">Ir para GTA 6</a> <img src="Img/Img04.jpg"> <h2 id=“gta5”></h2> <h2>História</h2> <p>A história de GTA 5 é dividida em três atos, cada um com várias missões que envolvem os três protagonistas. O primeiro ato apresenta os personagens e suas motivações, o segundo ato mostra o desenvolvimento dos planos dos criminosos e o terceiro ato traz o desfecho da trama, que pode variar de acordo com a escolha do jogador.</p> <p>Michael é um ex-assaltante de bancos que vive uma vida de luxo em Los Santos, mas que está insatisfeito com sua família e seu programa de proteção à testemunha. Franklin é um jovem que trabalha como recuperador de carros para um agiota, mas que sonha em ascender no mundo do crime. Trevor é um ex-parceiro de Michael, que vive em uma área rural e lidera uma gangue de traficantes e contrabandistas.</p> <p>Os três se reúnem após um golpe mal-sucedido e passam a realizar vários trabalhos para diferentes criminosos e organizações, como a máfia, o governo e a FIB (paródia da FBI). Eles também têm que lidar com seus próprios problemas pessoais e inimigos, como o empresário corrupto Devin Weston e o líder de um cartel mexicano, Martin Madrazo.</p> <p>No final do jogo, o jogador pode escolher entre três opções: matar Trevor, matar Michael ou salvar os dois e eliminar seus inimigos. Cada escolha tem suas consequências e implicações para os personagens e o mundo do jogo.</p> <h3>Novidades</h3> <p>GTA 5 trouxe várias novidades para a franquia, tanto em termos de jogabilidade quanto de conteúdo. Algumas das principais novidades são:</p> <ul> <li>A possibilidade de alternar entre os três protagonistas a qualquer momento, cada um com suas próprias habilidades, personalidades e missões.</li> <li>Um mapa gigantesco, que inclui a cidade de Los Santos e seus arredores, como o deserto, as montanhas e o oceano.</li> <li>Uma grande variedade de veículos, armas, roupas, atividades e easter eggs para explorar e personalizar.</li> <li>Um modo online, que permite aos jogadores criarem seus próprios personagens e participarem de diversas atividades cooperativas ou competitivas com outros jogadores ao redor do mundo.</li> <li>Uma série de atualizações e conteúdos adicionais, que adicionaram novas missões, modos, veículos, armas, roupas e muito mais ao jogo.</li> </ul> <h3>Curiosidades</h3> <p>GTA 5 é um jogo cheio de curiosidades, referências e homenagens a diversos elementos da cultura pop, como filmes, séries, músicas, celebridades e outros jogos. Algumas das curiosidades mais interessantes são:</p> <ul> <li>O jogo possui 7 recordes no Guinness, incluindo o de propriedade do entretenimento a atingir mais rápido a marca de US$ 1 bilhão1.</li> <li>A estimativa é que o custo de desenvolvimento e marketing de GTA 5 seja de US$ 265 milhões1.</li> <li>O maior número de jogadores simultâneos jogando Grand Theft Auto V na Steam foi de 360 mil1.</li> <li>O jogo possui mais de 240 canções licenciadas em suas 17 estações de rádio, além de músicas originais compostas por artistas como Tangerine Dream, Woody Jackson e The Alchemist.</li> <li>O jogo possui várias celebridades que dublam ou aparecem como personagens, como Samuel L. Jackson, Danny McBride, Ricky Gervais, Jimmy Kimmel, Cara Delevingne e até mesmo o rapper brasileiro Emicida.</li> <li>O jogo possui várias referências a outros jogos da Rockstar, como Red Dead Redemption, Max Payne, Bully e Manhunt.</li> <li>O jogo possui vários easter eggs, como o Pé Grande, os alienígenas, o fantasma da Jolene Cranley-Evans, o serial killer Merle Abrahams e o jetpack.
+    <header>
+        <h1>GTA 5 - Mais Detalhes</h1>
+        <p>Conteúdo organizado e visual limpo para demonstrar o aprendizado de HTML e CSS do segundo semestre. Navegue entre as páginas para explorar GTA 5 e GTA 6.</p>
+    </header>
+
+    <nav>
+        <a href="Index.html">Página Inicial</a>
+        <a href="conteudo-gta6.html">GTA 6</a>
+    </nav>
+
+    <main>
+        <article class="card hero">
+            <img src="Img/Img01.jpg" alt="Capa de GTA V com a cidade de Los Santos ao fundo" />
+            <p>GTA 5 é um dos jogos mais celebrados da franquia, com três protagonistas, mundo aberto e uma narrativa que combina ação, humor e crítica social.</p>
+        </article>
+
+        <article class="card">
+            <h2>História</h2>
+            <p>A trama de GTA 5 acompanha Michael, Franklin e Trevor em Los Santos, inspirada em Los Angeles. A história se desenvolve em diferentes atos e permite que o jogador alterne entre os personagens conforme cumpre missões e enfrenta conflitos pessoais.</p>
+            <p>O jogo mostra como cada protagonista lida com suas escolhas: Michael tenta recuperar sua família, Franklin busca ascensão social e Trevor vive em um mundo de violência e caos.</p>
+        </article>
+
+        <article class="card">
+            <h2>Novidades</h2>
+            <p>GTA 5 trouxe inovações importantes para a série, incluindo:</p>
+            <ul class="info-list">
+                <li>Alternância entre três protagonistas em tempo real.</li>
+                <li>Mapa amplo com cidade, desertos, montanhas e litoral.</li>
+                <li>Modo online que revolucionou a longevidade do jogo.</li>
+                <li>Grande variedade de veículos, missões e atividades opcionais.</li>
+                <li>Atualizações constantes que mantiveram o conteúdo sempre recente.</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2>Curiosidades</h2>
+            <ul class="info-list">
+                <li>GTA 5 detém diversos recordes, incluindo vendas rápidas e altos faturamentos.</li>
+                <li>O desenvolvimento teve um orçamento estimado em US$ 265 milhões.</li>
+                <li>O jogo usa mais de 240 músicas licenciadas em suas rádios internas.</li>
+                <li>Personagens e celebridades do mundo real aparecem em dublagens e referências.</li>
+                <li>Existem muitos easter eggs, como alienígenas, Pé Grande e histórias ocultas.</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        Página de detalhes de GTA 5 criada como trabalho de faculdade de Desenvolvimento Web 1.
+    </footer>
 </body>
 </html>

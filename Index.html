@@ -5,66 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTA 5 e GTA 6</title>
     <style>
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    
-        #logo {
-            width: 300px;
-            display: block;
-            margin: 0 auto;
+        :root {
+            --bg: #f4f4fb;
+            --card: #ffffff;
+            --primary: #665cbe;
+            --accent: #0070d1;
+            --text: #1b1b2a;
+            --muted: #555770;
         }
 
-        h1 { 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #e8e9ff 0%, #f8f8ff 33%, #ffffff 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
             text-align: center;
-            color: #665cbe;
-            border: 5px solid #0070d1;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #e3e3e3; }
-    
-        h2 { text-align: center; color: #000000; border: 3px solid black;
-        }       
-    
-        p {
-            text-align: justify;
-            line-height: 1.5;
+            padding: 36px 16px 24px;
         }
-    
-        img {
-            width: 35%;
-            height: auto;
-            display: block;
-            margin: auto;
+
+        header h1 {
+            margin: 0;
+            font-size: clamp(2rem, 2.5vw, 3rem);
+            color: var(--primary);
         }
-    
-        a {
-            color: #665cbe;
+
+        header p {
+            max-width: 760px;
+            margin: 14px auto 0;
+            color: var(--muted);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 22px auto 0;
+            padding: 0 16px;
+        }
+
+        nav a {
+            padding: 10px 18px;
+            background: var(--card);
+            border: 1px solid rgba(102, 92, 190, 0.35);
+            border-radius: 999px;
+            color: var(--primary);
             text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
         }
-    
-        a:hover {
-            text-decoration: underline;
+
+        nav a:hover,
+        nav a:focus-visible {
+            background: var(--primary);
+            color: #ffffff;
+            transform: translateY(-1px);
+            outline: none;
+        }
+
+        main {
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 0 16px 36px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 24px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+            padding: 28px;
+            margin-top: 24px;
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 640px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 18px;
+            transition: transform 0.25s ease;
+        }
+
+        .card img:hover {
+            transform: scale(1.03);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: #f8f8ff;
+            border: 1px solid rgba(102, 92, 190, 0.12);
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .button-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 12px 20px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .button-link:hover,
+        .button-link:focus-visible {
+            background: #4a6ac3;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+            padding: 18px 16px 30px;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 20px;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class=“container”> <img id="logo" src="Img/Img02.png" alt=“Logo> <h1>GTA 5 e GTA 6 - História, Criação e Curiosidades</h1> <p>Grand Theft Auto, ou simplesmente GTA, é uma das franquias mais populares e influentes da história dos videogames. Criada pela Rockstar Games, a série é conhecida por sua jogabilidade de mundo aberto, que permite ao jogador explorar livremente cenários inspirados em cidades reais, enquanto realiza missões variadas e interage com personagens carismáticos e controversos.</p> <p>Neste artigo, vamos falar sobre dois dos jogos mais recentes e esperados da franquia: GTA 5 e GTA 6. Vamos conhecer um pouco sobre a história, a criação, as curiosidades e o futuro desses títulos, que prometem muita diversão e emoção para os fãs de GTA.</p> <img src="C:\Users\brunn\OneDrive\Documentos\Prova 3\Img\Img01.jpg"> <h2>GTA 5</h2> <p>GTA 5 é o quinto jogo da série principal de Grand Theft Auto, lançado em 2013 para PlayStation 3 e Xbox 360, e posteriormente para PlayStation 4, Xbox One e PC. O jogo se passa na cidade fictícia de Los Santos, baseada em Los Angeles, e acompanha a vida de três protagonistas: Michael, Franklin e Trevor, que se envolvem em diversos crimes e conflitos.</p> <p>O jogo foi um enorme sucesso de crítica e público, sendo considerado um dos melhores jogos de todos os tempos. GTA 5 possui 7 recordes no Guinness, incluindo o de propriedade do entretenimento a atingir mais rápido a marca de US$ 1 bilhão1. A estimativa é que o custo de desenvolvimento e marketing de GTA 5 seja de US$ 265 milhões1. O maior número de jogadores simultâneos jogando Grand Theft Auto V na Steam foi de 360 mil1.</p> <p>Uma das principais novidades de GTA 5 foi o modo online, que permite aos jogadores criarem seus próprios personagens e participarem de diversas atividades cooperativas ou competitivas com outros jogadores ao redor do mundo. O modo online recebeu constantes atualizações e conteúdos adicionais, mantendo o jogo vivo e relevante por anos.</p> <p>Para saber mais sobre GTA 5, clique <a href="conteudo-gta5.html"">aqui</a>.</p> <img src="Img/Img03.jpg" alt=“Imagem GTA 6”> <h2>GTA 6</h2> <p>GTA 6 é o próximo jogo da série principal de Grand Theft Auto, anunciado oficialmente pela Rockstar Games em novembro de 2023, após anos de rumores e especulações. O jogo ainda não tem uma data de lançamento confirmada, mas espera-se que seja lançado para PlayStation 5, Xbox Series X|S e PC.</p> <p>Pouco se sabe sobre o jogo, mas o primeiro trailer oficial de GTA 6 será revelado no começo de dezembro de 2023, em comemoração ao aniversário de 25 anos da Rockstar2. GTA 6 promete ser um dos jogos mais aguardados da história dos games, e um dos mais ambiciosos e inovadores da franquia.</p> <p>Algumas das novidades esperadas para GTA 6 são: o uso da tecnologia de ray tracing, que permite uma exibição de reflexos, iluminação e sombras mais realistas e dinâmicas2; a presença de uma unidade de armazenamento SSD, que reduz os tempos de carregamento e melhora a performance do jogo3; e a possibilidade de trocar as placas do console por diferentes cores, como preto, vermelho, rosa, azul e roxo45.</p> <p>Para saber mais sobre GTA 6, clique <a href="conteudo-gta6.html">aqui</a>. </p> </div> <script>
-    let imagens = document.getElementsByTagName("img");
-    for (let i = 0; i < imagens.length; i++) {
-        imagens[i].style.transition = "transform 0.3s";
-        imagens[i].addEventListener("mouseover", function() {
-            this.style.transform = "scale(1.1)";
-        });
-        imagens[i].addEventListener("mouseout", function() {
-            this.style.transform = "scale(1)";
-        });
-    }
-</script>
+    <header>
+        <h1>GTA 5 e GTA 6</h1>
+        <p>Trabalho de Desenvolvimento Web 1: uma página simples, clara e responsiva que apresenta os dois jogos com estrutura semântica, estilo consistente e navegação direta.</p>
+    </header>
+    <main>
+        <article class="card">
+            <figure>
+                <img src="Img/Img02.png" alt="Imagem de capa de GTA V com os três protagonistas" />
+                <figcaption style="margin-top: 12px; color: var(--muted); text-align: center;">GTA V é um clássico que mostra Los Santos em estilo de mundo aberto.</figcaption>
+            </figure>
+            <section>
+                <h2>Sobre esta página</h2>
+                <p>Esta página mostra conhecimentos de HTML e CSS aprendidos no segundo semestre: estrutura de cabeçalho, navegação, cards, layout responsivo e imagens com descrição. O objetivo é deixar o conteúdo organizado para fácil leitura.</p>
+            </section>
+            <section class="grid">
+                <div class="feature">
+                    <h3>HTML semântico</h3>
+                    <p>Uso de <code>header</code>, <code>main</code>, <code>section</code> e <code>footer</code> para melhorar a organização.</p>
+                </div>
+                <div class="feature">
+                    <h3>Layout responsivo</h3>
+                    <p>O design se adapta a diferentes tamanhos de tela, tanto para desktop quanto para celular.</p>
+                </div>
+                <div class="feature">
+                    <h3>Conteúdo bem apresentado</h3>
+                    <p>Textos claros, títulos visíveis e navegação simples mostram aprendizado básico de UX para provas e trabalhos.</p>
+                </div>
+            </section>
+        </article>
+
+        <article class="card">
+            <h2>Explore os jogos</h2>
+            <p>Veja os detalhes separados em páginas específicas para <strong>GTA 5</strong> e <strong>GTA 6</strong>.</p>
+            <nav>
+                <a href="conteudo-gta5.html">GTA 5</a>
+                <a href="conteudo-gta6.html">GTA 6</a>
+            </nav>
+        </article>
+    </main>
+    <footer>
+        Desenvolvido para prova de Web 1 usando HTML e CSS em uma estrutura clara e moderna.
+    </footer>
 </body>
 </html>

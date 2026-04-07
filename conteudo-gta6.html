@@ -3,56 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> GTA 5 - Mais Detalhes</title>
+    <title>GTA 6 - Mais Detalhes</title>
     <style>
+        :root {
+            --bg: #f5f4ff;
+            --card: #ffffff;
+            --primary: #4b4d9b;
+            --accent: #b33d9d;
+            --text: #1f1f35;
+            --muted: #5f617a;
+        }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        * {
+            box-sizing: border-box;
         }
-    
-        #logo {
-            width: 300px;
-            display: block;
-            margin: 0 auto;
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #f6f5ff 0%, #f0efff 45%, #ffffff 100%);
+            color: var(--text);
+            line-height: 1.6;
         }
-    
-        h1 {
+
+        header {
             text-align: center;
-            color: #665cbe;
-            border: 5px solid #0070d1;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #e3e3e3;
+            padding: 28px 16px 0;
         }
-    
-        p {
-            text-align: justify;
-            line-height: 1.5;
+
+        header h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: clamp(2rem, 2.4vw, 2.8rem);
         }
-    
-        img {
-            width: 40%;
-            height: auto;
-            display: block;
-            margin: auto;
+
+        header p {
+            max-width: 740px;
+            margin: 14px auto 24px;
+            color: var(--muted);
         }
-    
-        a {
-            color: #665cbe;
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding: 0 16px 24px;
+        }
+
+        nav a {
             text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            padding: 10px 18px;
+            border: 1px solid rgba(75, 77, 155, 0.3);
+            border-radius: 999px;
+            background: #ffffff;
+            transition: 0.2s ease;
         }
-    
-        a:hover {
-            text-decoration: underline;
+
+        nav a:hover,
+        nav a:focus-visible {
+            background: var(--accent);
+            color: #ffffff;
+            outline: none;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 16px 32px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 22px;
+            box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 680px;
+            display: block;
+            margin: 0 auto 18px;
+            border-radius: 18px;
+            transition: transform 0.25s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        .info-list {
+            margin: 0;
+            padding-left: 22px;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+            padding: 14px 16px 26px;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 20px;
+            }
+
+            nav {
+                gap: 8px;
+            }
         }
     </style>
 </head>
 <body>
-     <div> </ul> <img src="Img/Img05.jpg"> <h2 id=“gta6”>GTA 6</h2> <a href="Index.html">Ir para GTA 5</a>
-        <p>GTA 6 é o próximo jogo da série principal de Grand Theft Auto, anunciado oficialmente pela Rockstar Games em novembro de 2023, após anos de rumores e especulações. O jogo ainda não tem uma data de lançamento confirmada, mas espera-se que seja lançado para PlayStation 5, Xbox Series X|S e PC.</p> <h3>História</h3> <p>A história de GTA 6 ainda é um mistério, mas alguns vazamentos e rumores indicam que o jogo deve mesmo contar a história de um casal de bandidos, no estilo Bonnie e Clyde. Essa informação já havia sido dada pelo jornalista Jason Schreier em julho de 2022 e foi teoricamente “confirmada” por um vazamento em setembro do mesmo ano.</p> <p>De acordo com o que circulou na internet, o casal de protagonistas é formado por Jason e Lucia, que é uma mulher latino-americana. As filmagens mostram que o jogador poderá alternar entre os dois com o botão pra baixo no d-pad e que será possível trocar itens entre os personagens. Ainda não se sabe qual será o cenário, o enredo e os objetivos dos criminosos, mas espera-se que o jogo traga muitas surpresas e reviravoltas.</p> <h3>Novidades</h3> <p>GTA 6 promete. </div>
+    <header>
+        <h1>GTA 6 - Mais Detalhes</h1>
+        <p>Uma página de conteúdo simples e clara que mostra o uso de semântica HTML e estilo CSS básico para um trabalho de Web 1.</p>
+    </header>
+
+    <nav>
+        <a href="Index.html">Página Inicial</a>
+        <a href="conteudo-gta5.html">GTA 5</a>
+    </nav>
+
+    <main>
+        <article class="card hero">
+            <img src="Img/Img05.jpg" alt="Imagem de divulgação de GTA 6 com ambiente neon e cidade futurista" />
+            <p>GTA 6 é o próximo título da série, muito aguardado pelos fãs. Embora ainda existam poucos detalhes oficiais, o jogo promete inovações visuais e uma história nova com personagens fortes.</p>
+        </article>
+
+        <article class="card">
+            <h2>O que sabemos sobre a história</h2>
+            <p>O enredo de GTA 6 parece estar focado em um casal de protagonistas, inspirado no estilo Bonnie e Clyde. As primeiras informações sugerem que será possível alternar entre dois personagens e explorar diferentes regiões em um mundo aberto maior.</p>
+        </article>
+
+        <article class="card">
+            <h2>Expectativas</h2>
+            <p>Os recursos esperados incluem:</p>
+            <ul class="info-list">
+                <li>Gráficos mais realistas com ray tracing e iluminação avançada.</li>
+                <li>Cenários maiores e mais detalhados do que em GTA 5.</li>
+                <li>Interação mais profunda entre os personagens e o mundo.</li>
+                <li>Carregamento mais rápido em consoles modernos graças ao SSD.</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2>Por que essa página é útil</h2>
+            <p>Este trabalho demonstra organização de conteúdo e design funcional. Ele mostra como uma página de projeto pode ser construída com um visual agradável, sem uso excessivo de efeitos, o que é ideal para uma avaliação acadêmica.</p>
+        </article>
+    </main>
+
+    <footer>
+        Página de detalhes de GTA 6 criada como prova de Web 1 com HTML e CSS simples.
+    </footer>
 </body>
 </html>
